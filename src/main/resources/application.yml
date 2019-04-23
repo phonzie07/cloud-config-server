@@ -1,0 +1,24 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: tmnphConfigServer
+  cloud:
+    config:
+      server:
+        git:
+          - password: P@ssw0rd123
+          uri: https://github.com/phonzie07/configs
+          username: phonzie07
+          search-paths: '{application}/local'
+          force-pull: true
+          - password: P@ssw0rd123
+          uri: https://github.com/phonzie07/configs
+          username: phonzie07
+          search-paths: '{application}/dev'
+          force-pull: true
+          - password: P@ssw0rd123
+          uri: https://github.com/phonzie07/configs
+          username: phonzie07
+          search-paths: '{application}/staging'
+          force-pull: true
