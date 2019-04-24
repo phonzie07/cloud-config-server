@@ -7,18 +7,8 @@ spring:
     config:
       server:
         git:
-          - password: P@ssw0rd123
           uri: https://github.com/phonzie07/configs
+          password: naitsirch007
           username: phonzie07
-          search-paths: '{application}/local'
-          force-pull: true
-          - password: P@ssw0rd123
-          uri: https://github.com/phonzie07/configs
-          username: phonzie07
-          search-paths: '{application}/dev'
-          force-pull: true
-          - password: P@ssw0rd123
-          uri: https://github.com/phonzie07/configs
-          username: phonzie07
-          search-paths: '{application}/staging'
+          search-paths: '{application}'
           force-pull: true
